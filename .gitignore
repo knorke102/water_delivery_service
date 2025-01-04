@@ -169,5 +169,5 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
-!/migrations/water_delivery_service.db
-!.idea/
+/.idea/
+/migrations/gimranov_water_delivery_service.db
