@@ -1,2 +1,13 @@
-# water_delivery_service
-Water delivery service
+# Служба доставки воды
+
+## Запуск:
+
+### Создание базы данных:
+```
+python3 migrations/create_tables.py
+```
+
+### Запуск пользовательского интерфейса:
+```
+python3 app.py
+```
