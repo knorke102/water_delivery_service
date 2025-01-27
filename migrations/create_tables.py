@@ -54,6 +54,29 @@ def create_tables():
         )
     ''')
 
+    # Таблица для учета товаров
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS inventory (
+        id_item INTEGER PRIMARY KEY AUTOINCREMENT,
+        item_name TEXT,
+        item_description TEXT,
+        stock_quantity INTEGER,
+        unit_price REAL
+        )
+    ''')
+
+    # Таблица для сотрудников
+    cursor.execute('''
+        CREATE TABLE IF NOT EXISTS employees (
+        id_employee INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT,
+        role TEXT,
+        phone TEXT,
+        email TEXT,
+        hire_date TEXT
+    )
+    ''')
+
     conn.commit()
     conn.close()
 
